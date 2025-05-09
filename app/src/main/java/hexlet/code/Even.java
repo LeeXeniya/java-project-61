@@ -1,37 +1,23 @@
 package hexlet.code;
 
-import java.util.Scanner;
+
+import java.util.Random;
+
+import static hexlet.code.Engine.ROUNDS;
 
 public class Even {
 	public static void getEven() {
-		System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-		var count = 0;
-		int[] numbers = {15, 6, 7};
-		var userName = Cli.getName();
-		Scanner scanner = new Scanner(System.in);
 
-		for (var i = 0; i < numbers.length; i++) {
-			System.out.println("Question: " + numbers[i]);
-			System.out.print("Your answer: ");
-			String userAnswer = scanner.nextLine();
+		Random random = new Random();
+		var questions = new String[ROUNDS][];
 
-			if (numbers[i] % 2 == 1 && userAnswer.equals("yes")) {
-				System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.");
-				System.out.println("Let's try again, " + userName);
-				break;
-			} else if (numbers[i] % 2 == 0 && userAnswer.equals("no")) {
-				System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.");
-				System.out.println("Let's try again, " + userName);
-				break;
-			} else if (numbers[i] % 2 == 0 && userAnswer.equals("yes") || numbers[i] % 2 == 1 && userAnswer.equals("no")) {
-				System.out.println("Correct!");
-			} else {
-				break;
-			}
-			count++;
+		for (var i = 0; i < ROUNDS; i++) {
+			int value = random.nextInt(1,100);
+
+			var correctAnswer = value % 2 == 1 ? "yes" : "no";
+
+			questions[i] = new String[] { String.valueOf(value), correctAnswer};
 		}
-		if (count == 3) {
-			System.out.println("Congratulations, " + userName);
-		}
+		Engine.run(questions, "Answer 'yes' if the number is even, otherwise answer 'no'.");
 	}
 }

@@ -10,4 +10,4 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=LeeXeniya_java-project-61&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=LeeXeniya_java-project-61)
 
 #аскинема с примером запуска игры
-https://asciinema.org/a/L4qR90Z1rfN5JGG1y7EUBDrLh
+https://asciinema.org/a/basbDC6lMVhQmheGO3nP84nSm
