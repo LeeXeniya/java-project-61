@@ -13,7 +13,7 @@ public class Even {
 		for (var i = 0; i < ROUNDS; i++) {
 			int value = random.nextInt(1,100);
 
-			var correctAnswer = value % 2 == 1 ? "yes" : "no";
+			var correctAnswer = value % 2 == 1 ? "no" : "yes";
 
 			questions[i] = new String[] { String.valueOf(value), correctAnswer};
 		}
