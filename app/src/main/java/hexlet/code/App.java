@@ -39,8 +39,7 @@ public class App {
             case 6:
                 Prime.getPrime();
                 break;
-            case 0:
-                break;
+            default: break;
         }
       //  }
         scanner.close();

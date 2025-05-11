@@ -10,7 +10,7 @@ public class GCD {
 		Random random = new Random();
 		var questions = new String[ROUNDS][];
 
-		for (var i = 0; i < ROUNDS; i++ ) {
+		for (var i = 0; i < ROUNDS; i++) {
 
 			int number1 = random.nextInt(1, 50);
 			int number2 = random.nextInt(1, 50);

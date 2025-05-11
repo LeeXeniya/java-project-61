@@ -12,19 +12,19 @@ public class Prime {
 		var questions = new String[ROUNDS][];
 
 		for (var i = 0; i < ROUNDS; i++) {
-			int value = random.nextInt(1,100);
+			int value = random.nextInt(1, 100);
 
 			var correctAnswer = isSimple(value) ? "yes" : "no";
 
-			questions[i] = new String[] { String.valueOf(value), correctAnswer};
+			questions[i] = new String[] {String.valueOf(value), correctAnswer};
 		}
 		Engine.run(questions, "Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 	}
 
 	public static boolean isSimple(Integer number) {
-		if(number < 2) return false;
-		for(int i = 2; i < number / 2; i++) {
-			if(number % i == 0) {
+		if (number < 2) return false;
+		for (int i = 2; i < number / 2; i++) {
+			if (number % i == 0) {
 				return false;
 			}
 		}

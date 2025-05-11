@@ -14,13 +14,13 @@ public class Progression {
 		for (var i = 0; i < ROUNDS; i++) {
 			int number1 = random.nextInt(1, 100);
 			int quantity = random.nextInt(5, 10);
-			int point = random.nextInt(0, quantity-1);
+			int point = random.nextInt(0, quantity - 1);
 			int difference = random.nextInt(2, 10);
 
 			var progress = new int[quantity];
 			progress[0] = number1;
 			for (var j = 1; j < quantity; j++) {
-				progress[j] = progress[j-1] + difference;
+				progress[j] = progress[j - 1] + difference;
 			}
 
 			String numbers = "";
