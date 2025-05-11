@@ -1,6 +1,11 @@
 package hexlet.code;
 
-import hexlet.code.games.*;
+import hexlet.code.games.Cli;
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
+import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 import java.util.Scanner;
 
 public class App {
@@ -21,27 +26,14 @@ public class App {
         scanner.nextLine();
 
         switch (userNumber) {
-            case 1:
-                Cli.getName();
-                break;
-            case 2:
-                Even.getEven();
-                break;
-            case 3:
-                Calc.getCalc();
-                break;
-            case 4:
-                GCD.getGCD();
-                break;
-            case 5:
-                Progression.getProgression();
-                break;
-            case 6:
-                Prime.getPrime();
-                break;
-            default: break;
+            case 1 -> Cli.getName();
+            case 2 -> Even.getEven();
+            case 3 -> Calc.getCalc();
+            case 4 -> GCD.getGCD();
+            case 5 -> Progression.getProgression();
+            case 6 -> Prime.getPrime();
+	        default -> {break;}
         }
-      //  }
         scanner.close();
     }
 }
