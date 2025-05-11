@@ -24,15 +24,22 @@ public class App {
 
         int userNumber = scanner.nextInt();
         scanner.nextLine();
-
+        final int one = 1;
+        final int two = 2;
+        final int three = 3;
+        final int four = 4;
+        final int five = 5;
+        final int six = 6;
         switch (userNumber) {
-            case 1 -> Cli.getName();
-            case 2 -> Even.getEven();
-            case 3 -> Calc.getCalc();
-            case 4 -> GCD.getGCD();
-            case 5 -> Progression.getProgression();
-            case 6 -> Prime.getPrime();
-	        default -> {break;}
+            case one -> Cli.getName();
+            case two -> Even.getEven();
+            case three -> Calc.getCalc();
+            case four -> GCD.getGCD();
+            case five -> Progression.getProgression();
+            case six -> Prime.getPrime();
+            default -> {
+                break;
+            }
         }
         scanner.close();
     }
