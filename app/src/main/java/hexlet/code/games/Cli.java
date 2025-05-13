@@ -3,7 +3,7 @@ package hexlet.code.games;
 import java.util.Scanner;
 
 public class Cli {
-    public static void getName() {
+    public static void runCli() {
 
         System.out.println("Welcome to the Brain Games!");
         Scanner scanner = new Scanner(System.in);

@@ -2,19 +2,20 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import java.util.Random;
-import static hexlet.code.Engine.ROUNDS;
 
 public class Even {
-    public static void getEven() {
+    public static void runEven() {
+
         Random random = new Random();
-        var questions = new String[ROUNDS][];
+        var ROUNDS = 3;
+        var dataGame = new String[ROUNDS][];
         final int limit = 100;
         for (var i = 0; i < ROUNDS; i++) {
-            int value = random.nextInt(1, limit);
-            var correctAnswer = value % 2 == 1 ? "no" : "yes";
+            int number = random.nextInt(1, limit);
+            var correctAnswer = number % 2 == 1 ? "no" : "yes";
 
-            questions[i] = new String[] {String.valueOf(value), correctAnswer};
+            dataGame[i] = new String[] {String.valueOf(number), correctAnswer};
         }
-        Engine.run(questions, "Answer 'yes' if the number is even, otherwise answer 'no'.");
+        Engine.run(dataGame, "Answer 'yes' if the number is even, otherwise answer 'no'.");
     }
 }

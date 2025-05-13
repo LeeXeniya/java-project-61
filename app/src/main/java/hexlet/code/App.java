@@ -21,22 +21,15 @@ public class App {
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
+        String userAnswer = scanner.nextLine();
 
-        int userNumber = scanner.nextInt();
-        scanner.nextLine();
-        final int one = 1;
-        final int two = 2;
-        final int three = 3;
-        final int four = 4;
-        final int five = 5;
-        final int six = 6;
-        switch (userNumber) {
-            case one -> Cli.getName();
-            case two -> Even.getEven();
-            case three -> Calc.getCalc();
-            case four -> GCD.getGCD();
-            case five -> Progression.getProgression();
-            case six -> Prime.getPrime();
+        switch (userAnswer) {
+            case "1" -> Cli.runCli();
+            case "2" -> Even.runEven();
+            case "3" -> Calc.runCalc();
+            case "4" -> GCD.runGCD();
+            case "5" -> Progression.runProgression();
+            case "6" -> Prime.runPrime();
             default -> {
                 break;
             }
