@@ -7,13 +7,13 @@ public class Progression {
     public static void runProgression() {
 
         Random random = new Random();
-        var ROUNDS = 3;
-        var dataGame = new String[ROUNDS][];
+        var rounds = 3;
+        var dataGame = new String[rounds][];
         final int limit1 = 100;
         final int limit2 = 10;
         final int startLimit = 5;
 
-        for (var i = 0; i < ROUNDS; i++) {
+        for (var i = 0; i < rounds; i++) {
             int number1 = random.nextInt(1, limit1);
             int quantity = random.nextInt(startLimit, limit2);
             int point = random.nextInt(0, quantity - 1);

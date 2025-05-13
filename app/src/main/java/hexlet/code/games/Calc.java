@@ -6,12 +6,12 @@ import java.util.Random;
 public class Calc {
     public static void runCalc() {
 
-        var ROUNDS = 3;
+        var rounds = 3;
         Random random = new Random();
-        var dataGame = new String[ROUNDS][];
+        var dataGame = new String[rounds][];
         final int limit1 = 10;
         final int limit2 = 3;
-        for (var i = 0; i < ROUNDS; i++) {
+        for (var i = 0; i < rounds; i++) {
             int number1 = random.nextInt(1, limit1);
             int number2 = random.nextInt(1, limit1);
             String[] signs = {"-", "+", "*"};

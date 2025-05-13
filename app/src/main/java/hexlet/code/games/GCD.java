@@ -7,11 +7,11 @@ public class GCD {
     public static void runGCD() {
 
         Random random = new Random();
-        var ROUNDS = 3;
-        var dataGame = new String[ROUNDS][];
+        var rounds = 3;
+        var dataGame = new String[rounds][];
         final int limit = 50;
 
-        for (var i = 0; i < ROUNDS; i++) {
+        for (var i = 0; i < rounds; i++) {
 
             int number1 = random.nextInt(1, limit);
             int number2 = random.nextInt(1, limit);
