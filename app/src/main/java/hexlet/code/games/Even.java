@@ -7,7 +7,7 @@ public class Even {
     public static void runEven() {
 
         Random random = new Random();
-        var rounds = 3;
+        final int rounds = 3;
         var dataGame = new String[rounds][];
         final int limit = 100;
         for (var i = 0; i < rounds; i++) {

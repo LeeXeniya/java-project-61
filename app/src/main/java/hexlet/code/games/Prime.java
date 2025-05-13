@@ -7,7 +7,7 @@ public class Prime {
     public static void runPrime() {
 
         Random random = new Random();
-        var rounds = 3;
+        final int rounds = 3;
         var dataGame = new String[rounds][];
         final int limit = 100;
 

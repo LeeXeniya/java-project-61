@@ -6,7 +6,7 @@ import java.util.Random;
 public class Calc {
     public static void runCalc() {
 
-        var rounds = 3;
+        final int rounds = 3;
         Random random = new Random();
         var dataGame = new String[rounds][];
         final int limit1 = 10;

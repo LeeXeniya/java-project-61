@@ -7,7 +7,7 @@ public class Progression {
     public static void runProgression() {
 
         Random random = new Random();
-        var rounds = 3;
+        final int rounds = 3;
         var dataGame = new String[rounds][];
         final int limit1 = 100;
         final int limit2 = 10;

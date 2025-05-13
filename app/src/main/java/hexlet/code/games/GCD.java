@@ -7,7 +7,7 @@ public class GCD {
     public static void runGCD() {
 
         Random random = new Random();
-        var rounds = 3;
+        final int rounds = 3;
         var dataGame = new String[rounds][];
         final int limit = 50;
 
