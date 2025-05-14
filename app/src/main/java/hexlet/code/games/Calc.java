@@ -2,16 +2,16 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import java.util.Random;
+import static hexlet.code.Engine.ROUNDS;
 
 public class Calc {
     public static void runCalc() {
 
-        final int rounds = 3;
         Random random = new Random();
-        var dataGame = new String[rounds][];
+        var dataGame = new String[ROUNDS][];
         final int limit1 = 10;
         final int limit2 = 3;
-        for (var i = 0; i < rounds; i++) {
+        for (var i = 0; i < ROUNDS; i++) {
             int number1 = random.nextInt(1, limit1);
             int number2 = random.nextInt(1, limit1);
             String[] signs = {"-", "+", "*"};

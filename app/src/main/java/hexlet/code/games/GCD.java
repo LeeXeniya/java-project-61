@@ -2,16 +2,16 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import java.util.Random;
+import static hexlet.code.Engine.ROUNDS;
 
 public class GCD {
     public static void runGCD() {
 
         Random random = new Random();
-        final int rounds = 3;
-        var dataGame = new String[rounds][];
+        var dataGame = new String[ROUNDS][];
         final int limit = 50;
 
-        for (var i = 0; i < rounds; i++) {
+        for (var i = 0; i < ROUNDS; i++) {
 
             int number1 = random.nextInt(1, limit);
             int number2 = random.nextInt(1, limit);

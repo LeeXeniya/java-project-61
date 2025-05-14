@@ -3,17 +3,18 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import java.util.Random;
 
+import static hexlet.code.Engine.ROUNDS;
+
 public class Progression {
     public static void runProgression() {
 
         Random random = new Random();
-        final int rounds = 3;
-        var dataGame = new String[rounds][];
+        var dataGame = new String[ROUNDS][];
         final int limit1 = 100;
         final int limit2 = 10;
         final int startLimit = 5;
 
-        for (var i = 0; i < rounds; i++) {
+        for (var i = 0; i < ROUNDS; i++) {
             int number1 = random.nextInt(1, limit1);
             int quantity = random.nextInt(startLimit, limit2);
             int point = random.nextInt(0, quantity - 1);
